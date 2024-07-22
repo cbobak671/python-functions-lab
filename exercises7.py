@@ -8,6 +8,8 @@
 #
 # Write your function and test its output below.
 
+def calculate_tip(bill_amount, tip_percent):
+    tip = (bill_amount * tip_percent) / 100
+    return tip
 
-
-print('Exercise 7:', calculate_tip(50, 20))
+print('Exercise 7:', calculate_tip(75, 18))

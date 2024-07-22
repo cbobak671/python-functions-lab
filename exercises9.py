@@ -21,5 +21,22 @@
 
 # Define the function and then call it below.
 
+def basic_calculator(num1, num2, operation):
+    if operation == 'add': 
+        return num1 + num2
+    elif operation == 'subtract':
+        return num1 - num2
+    elif operation == 'multiply':
+        return num1 * num2
+    elif operation == 'divide':
+        if num2 == 0:
+            return('Invalid. Enter a number greater than 0')
+        else:
+            return num1/num2
+    else: 
+        return('Enter a valid operation.')
 
-print(‘Exercise 9 Result:’, basicCalculator(10, 5, “subtract”))
+
+print("Exercise 9 Result:", basic_calculator(10, 5, 'multiply')) #prints: "Exercise 9 Result: 50"
+print("Exercise 9 Result:", basic_calculator(30, 100, 'exponent')) #prints: "Exercise 9 Result: Enter a valid operation."
+print("Exercise 9 Result:", basic_calculator(30, 0, 'divide')) #prints: "Exercise 9 Result: Invalid. Enter a number greater than 0."

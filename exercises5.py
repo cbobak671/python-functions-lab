@@ -8,6 +8,7 @@
 #
 # Define the function and then call it below.
 
+def sum_to(n):
+    return n * (n+1) // 2
 
-
-print('Exercise 5:', sum_to(6))
+print('Exercise 5:', sum_to(10))

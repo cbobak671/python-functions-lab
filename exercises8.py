@@ -9,6 +9,12 @@
 #
 # Define the function and call it with different sets of numbers to test.
 
+def product(*nums):
+    total = 1
 
-f
+    for num in nums:
+        total *= num
+    return total
+
 print('Exercise 8:', product(2, 5, 5))
+print('Exercise 8:', product(10, 3, 6, 14))
